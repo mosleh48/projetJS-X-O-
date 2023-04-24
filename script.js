@@ -26,13 +26,21 @@ function startGame(id)
     let square = document.getElementById(id);
     if( turn == 'x' && square.innerHTML == '')
     {
-        square.innerHTML = 'x';
+       square.innerHTML = `
+       <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+         <line x1="0" y1="100" x2="100" y2="0" stroke-width="3" stroke="black"/>
+         <line x1="0" y1="0" x2="100" y2="100" stroke-width="3" stroke="black"/>
+       </svg>`;
         turn = "o";
       
     }
     else if( turn == 'o' && square.innerHTML == '')
     {
-        square.innerHTML = 'o';
+        square.innerHTML = `
+        
+<svg height="100" width="100">
+<circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="blue" />
+</svg> `;
         turn = "x";
        
     }
