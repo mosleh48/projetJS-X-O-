@@ -6,24 +6,35 @@
     <title>projetJS</title>
 </head>
 <body>
-   <div class="container">
-        <div class="title"> <span>X O </span></div>
-    <div class="squareContainer">
-        <div class="square" id="square1" onclick="startGame(this.id)"></div>
-        <div class="square" id="square2" onclick="startGame(this.id)"></div>
-        <div class="square" id="square3" onclick="startGame(this.id)"></div>
 
-        <div class="square" id="square4" onclick="startGame(this.id)"></div>
-        <div class="square" id="square5" onclick="startGame(this.id)"></div>
-        <div class="square" id="square6" onclick="startGame(this.id)"></div>
+    <div class="all">
+        
+        <div class="container">
 
-        <div class="square" id="square7" onclick="startGame(this.id)"></div>
-        <div class="square" id="square8" onclick="startGame(this.id)"></div>
-        <div class="square" id="square9" onclick="startGame(this.id)"></div>
-    </div>
-   </div>
+                <div class="title"> 
+                    <span id="winner"> </span>
+                </div>
 
+            <div class="squareContainer">
+                <div class="square" id="square1" onclick="startGame(this.id)"></div>
+                <div class="square" id="square2" onclick="startGame(this.id)"></div>
+                <div class="square" id="square3" onclick="startGame(this.id)"></div>
 
+                <div class="square" id="square4" onclick="startGame(this.id)"></div>
+                <div class="square" id="square5" onclick="startGame(this.id)"></div>
+                <div class="square" id="square6" onclick="startGame(this.id)"></div>
+
+                <div class="square" id="square7" onclick="startGame(this.id)"></div>
+                <div class="square" id="square8" onclick="startGame(this.id)"></div>
+                <div class="square" id="square9" onclick="startGame(this.id)"></div>
+            </div>
+
+            <div class="boutton">
+                <button id="button" onclick="replay()">replay</button>
+            </div>
+            
+        </div>
+</div>
 
 
     <script src="script.js"></script>

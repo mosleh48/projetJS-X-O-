@@ -1,31 +1,56 @@
-
+.all{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 .container{
     width: 700px;
     color: rgb(248, 248, 248);
     text-align: center;
+
    
 }
 span{
     font-size: 80px;
+    color: black;
 }
 .title{
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
     padding: 10px;
     margin: 10px;
 }
 .square{
     width: 200px;
     height: 200px;
-    background: blue;
+    background: rgb(150, 150, 150);
     margin: 3px;
     font-size: 150px;
     float: left;
-    
+    transition: background-color 1s ease;
 }
 .square:hover{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(87, 87, 87);
     cursor: pointer;
 }
 .squareContainer{
     margin-left: 40px;
+}
+#button{
+    width: 250px;
+    height: 50px;
+   font-size: 25px;
+   transition: background-color 1s ease;
+   background-color: rgb(164, 164, 164);
+   color: white;
+   border: white;
+border-radius: 10%;
+}
+#button:hover{
+    background-color: rgb(87, 87, 87);
+    cursor: pointer;
+}
+svg{
+    padding-top: 45px;
+
 }
